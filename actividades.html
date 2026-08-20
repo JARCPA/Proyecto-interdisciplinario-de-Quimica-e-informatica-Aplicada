@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Quiz interactivo sobre química orgánica y sus aplicaciones en la vida cotidiana.">
+
+    <title>Quiz | Química Orgánica</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img src="img/logo-colegio.png"
+                 alt="Logo del Colegio José Antonio Remón Cantera">
+
+        </a>
+
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+
+        <ul class="nav-menu" id="navMenu">
+
+            <li>
+                <a href="index.html">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="fundamentos.html">
+                    Fundamentos
+                </a>
+            </li>
+
+            <li>
+                <a href="hidrocarburos.html">
+                    Hidrocarburos
+                </a>
+            </li>
+
+            <li>
+                <a href="nomenclatura.html">
+                    IUPAC
+                </a>
+            </li>
+
+            <li>
+                <a href="alimentos.html">
+                    Alimentos
+                </a>
+            </li>
+
+            <li>
+                <a href="medicamentos.html">
+                    Medicamentos
+                </a>
+            </li>
+
+            <li>
+                <a href="cosmeticos.html">
+                    Cosméticos
+                </a>
+            </li>
+
+            <li>
+                <a href="productos.html">
+                    Productos
+                </a>
+            </li>
+
+            <li>
+                <a href="clasificacion.html">
+                    Clasificación
+                </a>
+            </li>
+
+            <li>
+                <a href="actividades.html" class="active">
+                    Quiz
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO DEL QUIZ
+====================================================== -->
+
+<section class="page-hero quiz-hero">
+
+    <div>
+
+        <p class="hero-tag">
+            PON A PRUEBA LO APRENDIDO
+        </p>
+
+        <h1>
+            Quiz de
+            <span>Química Orgánica</span>
+        </h1>
+
+        <p>
+            Responde las preguntas y comprueba cuánto has aprendido
+            sobre los compuestos orgánicos presentes en nuestra
+            vida cotidiana.
+        </p>
+
+    </div>
+
+
+    <div class="page-hero-symbol">
+
+        <span>
+            🧪
+        </span>
+
+        <small>
+            Aprende · Responde · Comprueba
+        </small>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INSTRUCCIONES
+====================================================== -->
+
+<section class="content-section">
+
+    <div class="section-title">
+
+        <p>
+            ANTES DE COMENZAR
+        </p>
+
+        <h2>
+            ¿Cómo funciona?
+        </h2>
+
+    </div>
+
+
+    <div class="quiz-instructions">
+
+        <div class="quiz-instruction">
+
+            <span>
+                01
+            </span>
+
+            <p>
+                Lee cuidadosamente cada pregunta.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-instruction">
+
+            <span>
+                02
+            </span>
+
+            <p>
+                Selecciona una sola respuesta.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-instruction">
+
+            <span>
+                03
+            </span>
+
+            <p>
+                Al terminar podrás conocer tu puntuación.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUIZ
+====================================================== -->
+
+<section class="content-section light-section">
+
+    <div class="quiz-container">
+
+        <div class="quiz-header">
+
+            <div>
+
+                <p>
+                    QUIZ
+                </p>
+
+                <h2>
+                    ¿Cuánto sabes de química orgánica?
+                </h2>
+
+            </div>
+
+            <div class="quiz-progress">
+
+                <span id="questionNumber">
+                    1
+                </span>
+
+                /
+                
+                <span>
+                    10
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 1 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 1
+            </p>
+
+            <h3>
+                ¿Cuál es el elemento fundamental de los compuestos
+                orgánicos?
+            </h3>
+
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="1"
+                        data-answer="a">
+
+                    A. Oxígeno
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="1"
+                        data-answer="b">
+
+                    B. Carbono
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="1"
+                        data-answer="c">
+
+                    C. Sodio
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="1"
+                        data-answer="d">
+
+                    D. Hierro
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 2 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 2
+            </p>
+
+            <h3>
+                ¿Qué elementos forman principalmente a los
+                hidrocarburos?
+            </h3>
+
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="2"
+                        data-answer="a">
+
+                    A. Carbono e hidrógeno
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="2"
+                        data-answer="b">
+
+                    B. Oxígeno y nitrógeno
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="2"
+                        data-answer="c">
+
+                    C. Sodio y cloro
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="2"
+                        data-answer="d">
+
+                    D. Hierro y carbono
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 3 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 3
+            </p>
+
+            <h3>
+                ¿Cuál de estos productos puede contener polímeros?
+            </h3>
+
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="3"
+                        data-answer="a">
+
+                    A. Una botella plástica
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="3"
+                        data-answer="b">
+
+                    B. Una naranja
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="3"
+                        data-answer="c">
+
+                    C. Agua pura
+
+                </button>
+
+
+                <button class="answer-option"
+                        data-question="3"
+                        data-answer="d">
+
+                    D. Sal de mesa
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- =====================================================
+     PREGUNTAS 4 - 10
+====================================================== -->
+
+<section class="content-section">
+
+    <div class="quiz-container">
+
+
+        <!-- PREGUNTA 4 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 4
+            </p>
+
+            <h3>
+                ¿Cuál de estas sustancias es un alcohol?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="4"
+                        data-answer="a">
+                    A. Etanol
+                </button>
+
+                <button class="answer-option"
+                        data-question="4"
+                        data-answer="b">
+                    B. Metano
+                </button>
+
+                <button class="answer-option"
+                        data-question="4"
+                        data-answer="c">
+                    C. Benceno
+                </button>
+
+                <button class="answer-option"
+                        data-question="4"
+                        data-answer="d">
+                    D. Propano
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 5 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 5
+            </p>
+
+            <h3>
+                ¿Qué compuesto está relacionado con el sabor ácido
+                característico de los cítricos?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="5"
+                        data-answer="a">
+                    A. Ácido cítrico
+                </button>
+
+                <button class="answer-option"
+                        data-question="5"
+                        data-answer="b">
+                    B. Etanol
+                </button>
+
+                <button class="answer-option"
+                        data-question="5"
+                        data-answer="c">
+                    C. Metano
+                </button>
+
+                <button class="answer-option"
+                        data-question="5"
+                        data-answer="d">
+                    D. Polietileno
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 6 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 6
+            </p>
+
+            <h3>
+                ¿Cuál de estos productos puede contener ésteres
+                relacionados con aromas o fragancias?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="6"
+                        data-answer="a">
+                    A. Perfume
+                </button>
+
+                <button class="answer-option"
+                        data-question="6"
+                        data-answer="b">
+                    B. Vidrio
+                </button>
+
+                <button class="answer-option"
+                        data-question="6"
+                        data-answer="c">
+                    C. Agua destilada
+                </button>
+
+                <button class="answer-option"
+                        data-question="6"
+                        data-answer="d">
+                    D. Sal común
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 7 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 7
+            </p>
+
+            <h3>
+                ¿Qué tipo de moléculas forman los plásticos
+                mediante unidades repetitivas?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="7"
+                        data-answer="a">
+                    A. Polímeros
+                </button>
+
+                <button class="answer-option"
+                        data-question="7"
+                        data-answer="b">
+                    B. Minerales
+                </button>
+
+                <button class="answer-option"
+                        data-question="7"
+                        data-answer="c">
+                    C. Sales
+                </button>
+
+                <button class="answer-option"
+                        data-question="7"
+                        data-answer="d">
+                    D. Metales
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 8 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 8
+            </p>
+
+            <h3>
+                ¿Cuál de estos productos pertenece al área de
+                cosmética?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="8"
+                        data-answer="a">
+                    A. Perfume
+                </button>
+
+                <button class="answer-option"
+                        data-question="8"
+                        data-answer="b">
+                    B. Gasolina
+                </button>
+
+                <button class="answer-option"
+                        data-question="8"
+                        data-answer="c">
+                    C. Diésel
+                </button>
+
+                <button class="answer-option"
+                        data-question="8"
+                        data-answer="d">
+                    D. Cemento
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 9 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 9
+            </p>
+
+            <h3>
+                ¿Qué grupo funcional caracteriza a los ácidos
+                carboxílicos?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="9"
+                        data-answer="a">
+                    A. —OH
+                </button>
+
+                <button class="answer-option"
+                        data-question="9"
+                        data-answer="b">
+                    B. —COOH
+                </button>
+
+                <button class="answer-option"
+                        data-question="9"
+                        data-answer="c">
+                    C. —CH₃
+                </button>
+
+                <button class="answer-option"
+                        data-question="9"
+                        data-answer="d">
+                    D. —NH₂
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREGUNTA 10 -->
+
+        <div class="question-card">
+
+            <p class="question-number">
+                Pregunta 10
+            </p>
+
+            <h3>
+                ¿Por qué es importante estudiar la química orgánica
+                en la vida cotidiana?
+            </h3>
+
+            <div class="answer-options">
+
+                <button class="answer-option"
+                        data-question="10"
+                        data-answer="a">
+                    A. Porque solo existe en laboratorios
+                </button>
+
+                <button class="answer-option"
+                        data-question="10"
+                        data-answer="b">
+                    B. Porque permite comprender sustancias presentes
+                    en numerosos productos cotidianos
+                </button>
+
+                <button class="answer-option"
+                        data-question="10"
+                        data-answer="c">
+                    C. Porque todos los productos son iguales
+                </button>
+
+                <button class="answer-option"
+                        data-question="10"
+                        data-answer="d">
+                    D. Porque reemplaza todas las demás ciencias
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTÓN DE RESULTADO
+        ================================================== -->
+
+        <div class="quiz-submit-area">
+
+            <button id="finishQuiz"
+                    class="btn btn-primary">
+
+                Ver mi resultado
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             RESULTADO
+        ================================================== -->
+
+        <div id="quizResult"
+             class="quiz-result"
+             style="display: none;">
+
+            <div class="result-icon">
+                🧪
+            </div>
+
+            <p>
+                RESULTADO
+            </p>
+
+            <h2 id="scoreText">
+                Tu puntuación
+            </h2>
+
+            <p id="resultMessage">
+                Aquí aparecerá tu resultado.
+            </p>
+
+            <button id="restartQuiz"
+                    class="btn btn-secondary">
+
+                Intentar nuevamente
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+  </main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
